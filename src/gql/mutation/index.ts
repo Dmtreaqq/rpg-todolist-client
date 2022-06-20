@@ -14,3 +14,13 @@ export const DELETE_TODO = gql`
     deleteTodo(id: $id)
   }
 `;
+
+export const CHECK_TODO = gql`
+  mutation checkTodo($id: ID!) {
+    checkTodo(id: $id) {
+      id
+      title
+      done
+    }
+  }
+`;

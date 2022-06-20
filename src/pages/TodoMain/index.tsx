@@ -16,17 +16,13 @@ const TodoMain = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
-  const checkTodo = () => {
-    // TODO
-  };
-
   return (
     <Box>
       <Typography textAlign="center" variant="h2" component="h1">
         TodoList
       </Typography>
       <CreateTodo />
-      {data && <TodoList todos={data.todos} checkTodo={checkTodo} />}
+      {data && <TodoList todos={data.todos} />}
     </Box>
   );
 };
