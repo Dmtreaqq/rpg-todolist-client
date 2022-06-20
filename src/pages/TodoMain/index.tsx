@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useQuery } from "@apollo/client";
@@ -20,8 +19,6 @@ const TodoMain = () => {
   const checkTodo = () => {
     // TODO
   };
-
-  console.log(data);
 
   return (
     <Box>
