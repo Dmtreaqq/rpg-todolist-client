@@ -1,0 +1,69 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:react/jsx-runtime",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb/hooks"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react-hooks/exhaustive-deps": "warn",
+        "arrow-body-style": "off",
+        "react/function-component-definition": [
+            0
+        ],
+        "linebreak-style": "off",
+        "@typescript-eslint/quotes": [
+            "error",
+            "double"
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            "warn",
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+            "warn"
+        ],
+        "@typescript-eslint/comma-dangle": "off",
+        "object-curly-newline": "off",
+        "react/jsx-wrap-multilines": "off",
+        "import/prefer-default-export": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
